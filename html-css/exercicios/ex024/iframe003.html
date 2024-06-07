@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        a{
+            text-decoration: none;
+            background-color: rgb(0, 109, 109);
+            color: white;
+            padding: 10px;
+            line-height: 50px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        a:hover{
+            background-color: rgb(1, 53, 53);
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegue pelas páginas</h1>
+
+    <a href="paginas-extras/pag001.html" target="frame">Página 1</a>
+    <a href="paginas-extras/pag002.html" target="frame">Página 2</a>
+    <a href="paginas-extras/pag003.html" target="frame">Página 3</a>
+
+
+    <iframe src="paginas-extras/pagvazia.html" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+</body>
+</html>

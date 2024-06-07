@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        nav{
+            background-color: rgb(56, 56, 56);
+            padding: 3px;
+            height: 40px;
+            box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.479);
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>h2{
+            margin-top: 5px;
+            margin-bottom: 0px;
+        }
+
+        article>p{
+            margin: 5px 0px 0px 0px;
+        }
+
+        article > aside{
+            background-color: rgb(187, 187, 187);
+            margin: 0px;     
+        }
+
+        article > aside > p{
+            margin: 5px 0px 5px 0px;
+            padding: 5px 2px 5px 2px;
+        }
+
+        .temas{
+            color: rgb(78, 78, 78);
+            margin: 10px 0px 10px 0px;
+            padding: 0px;
+        }
+
+        #assuntos{
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site de Notícias</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Notícias</a>
+            <a href="#">Redes</a>
+            <a href="#">Endereço</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Brasil</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <p class="temas">Política | Eleições</p>
+                <h2>Notícia sobre as Eleições</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur doloremque, vero officiis dolores, unde voluptates excepturi quas quidem corporis facere reprehenderit consequuntur delectus officia non est dolor repudiandae odio? Vitae?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <p class="temas">Esportes | Futebol</p>
+                <h2>Notícia sobre Futebol</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis repudiandae dolorum incidunt distinctio sed minima, iste iure aliquam dolorem eaque!</p>
+                <aside>
+                    <p>Artigo escrito por João de Almeida</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Gio</p>
+    </footer>
+</body>
+</html>
