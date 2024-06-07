@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #474747;
+        }
+
+        main{
+            margin: auto;
+            margin-top: 30px;
+            min-width: 300px;
+            max-width: 600px;
+            color: #474747;
+            background-color: white;
+            padding: 50px 10px 50px 10px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main h1{
+            font-weight: bold;
+            font-size: 22pt;
+            text-align: center;
+        }
+
+        main h2{
+            font-weight: bold;
+            font-size: 14pt;
+            text-align: center;
+        }
+
+        main p{
+            font-weight: normal;
+            font-size: 12pt;
+            text-align: center;
+            line-height: 8pt;
+        }
+
+        main p.nome-info{
+            font-weight: normal;
+            font-size: 16pt;
+            text-align: center;
+            line-height: 8pt;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando códigos de JavaScript</h1>
+        <br>
+        <p>Aproveitando os exercícios da Aula 6 para testar algumas coisas.</p>
+        <br>
+        <br>
+        <h2>Abaixo, você verá algumas informações sobre seu nome.</h2>
+        <br>
+        <script>
+            var nome = window.prompt('Qual é seu nome?')
+            document.write(`<p class="nome-info">Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras.</p><br>`)
+            document.write(`<p class="nome-info">Seu nome em maiúsculas é ${nome.toLocaleUpperCase()}.</p><br>`)
+            document.write(`<p class="nome-info">Seu nome em minúsculas é ${nome.toLocaleLowerCase()}.</p>`)
+        </script>
+    </main>
+</body>
+</html>
