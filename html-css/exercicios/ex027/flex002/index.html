@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container-row {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row;
+        }
+
+        div.container-row-reverse {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.container-column {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.container-column-reverse {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>row:</p>
+    <div class="container-row">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <br>
+
+    <p>row-reverse:</p>
+    <div class="container-row-reverse">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <br>
+
+    <p>column:</p>
+    <div class="container-column">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    <br>
+
+    <p>column-reverse:</p>
+    <div class="container-column-reverse">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+
+</html>
