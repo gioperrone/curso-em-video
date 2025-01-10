@@ -1,0 +1,105 @@
+* {
+  font-family: Gotham, Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-1: #163970;
+  --color-2: #ff6e32;
+  --color-3: #132033;
+  --color-4: #e9f2ff;
+}
+
+@import url(styles.css);
+
+body, html {
+  height: 100%;
+  background: var(--color-3);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin: 100px 200px 100px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-4);
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-4);
+}
+
+.igrejas {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.btn-igreja {
+  background: none;
+  color: var(--color-4);
+  border-radius: 20px;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: 3px solid var(--color-4);
+}
+
+.btn-igreja:hover {
+  transition: .2s;
+  color: var(--color-3);
+  background: var(--color-4);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-1);
+}
+
+footer img {
+  padding: 30px;
+  height: 55px;
+}
+
+.disabled {
+  display: none;
+}
+
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.slideshow .slide {
+  display: none;
+}
+
+.slideshow .slide:not(.hidden) {
+  display: block;
+}
+
+.slideshow .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
